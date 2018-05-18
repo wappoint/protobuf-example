@@ -1,0 +1,11 @@
+option java_package = "com.danny.domain.proto";
+   option java_outer_classname = "FruitProto";
+   message Fruit {
+       required string category = 1;
+       repeated Apple apple = 2;
+   }
+   message Apple {
+       required string name = 1;
+       required string color = 2;
+       required int32 weight = 3;
+   }
